@@ -8,11 +8,11 @@
     <a-scene stats>
       <a-camera position="-10 1.6 1" camera="userHeight:0.01" wasd-controls="fly: true; acceleration: 600">
         <a-cursor color="lavender" opacity="0.5"></a-cursor>
-        <a-text position="0 -0.5 -1" width="1" align="center" color="lavender" ></a-text>
+        <a-text position="0 -0.5 -1" width="1" align="center" color="lavender" content="name-field: id"></a-text>
       </a-camera>
       <a-sky color="#002"></a-sky>
 
-      <a-entity forcegraph="json-url: miserables.json; name-field: id; auto-color-by: group; line-opacity:0.8;"></a-entity>
+      <a-entity position="100 1.6 1" forcegraph="json-url: miserables.json; name-field: id; auto-color-by: group; line-opacity:0.8;"></a-entity>
     </a-scene>
 
   </body>
